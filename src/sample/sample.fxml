@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.TextArea?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="310.0" prefWidth="410.0">
+         <children>
+            <Button layoutX="45.0" layoutY="176.0" mnemonicParsing="false" onAction="#decrypt" prefHeight="23.0" prefWidth="56.0" text="解密" />
+            <TextField fx:id="text1" layoutX="46.0" layoutY="61.0" prefHeight="23.0" prefWidth="300.0" />
+            <TextField fx:id="text2" layoutX="45.0" layoutY="126.0" prefHeight="23.0" prefWidth="135.0" />
+            <TextField fx:id="text3" layoutX="45.0" layoutY="245.0" prefHeight="23.0" prefWidth="300.0" />
+            <Label layoutX="45.0" layoutY="38.0" prefHeight="23.0" prefWidth="168.0" text="输入密文：(每7位二进制隔开)" />
+            <Label layoutX="45.0" layoutY="103.0" prefHeight="23.0" prefWidth="135.0" text="输入密钥：(字符串)" />
+            <Label layoutX="45.0" layoutY="222.0" prefHeight="23.0" prefWidth="56.0" text="明文：" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
